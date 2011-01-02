@@ -1,0 +1,21 @@
+﻿Mercury Book è un applicativo che permetterà ad ogni entita, plesso o cmq lo si volgia chiamare, di creare un suo piano di orari in cui mettere a disposizione i suoi campi da gioco.. Qualunque essi siano.
+
+Ci saranno due parti ben contraddistinte. Una riguardante il cliente e una per chi offre il servizio.
+
+Dal quest'ultimo lato si avrà la possibilità di:
+1. Creare dalla prima all'ultima fase una struttura di periodi, giorni della settimana e orari per l'utilizzo del plesso.
+2. Possibilità per ogni plesso di inserire tutti i campi che si vogliono.
+3. Per ogni campo si differenzieranno i periodi (estivo, invernale o comunque lo si voglia chiamare)
+4. Una volta creati i periodi che ci interessano, per ognuno di essi si potranno creare le fasce nei giorni settimanali
+5. All'interno di esse, infine, sarà possibile inoltre chiarire se la scelta dell'intervallo di prenotazione potrà essere libero o avrà dei vincoli (per es. prenotazione di ora in ora)
+
+Queste impostazioni creeranno tutto un calendario di accessibilità che renderanno l'utente in grado di prenotare la fascia più consona ai suoi orari e in linea, ovviamente, con quelli del plesso.
+
+Dal lato cliente sarà invece data la possibilità ovviamente dopo registrazione, di filtrare un periodo a suo piacimento e, in base alle disponibilità rimaste, di prenotare uno spazio ancora vuoto.
+
+Lo scopo è quello di far iscrivere più plessi possibile in modo da creare una rete che permetta la gestione totale online delle prenotazioni.
+Se si arriverà ad un numero sufficiente di iscrizioni (sia lato client  che server) allora si potranno implementare  le successive funzionalità:
+1. Creare un sistema di “Feed” per gli utenti. Ovvero dare un voto agli utenti in base al rispetto delle regole. Per esempio una persona potrebbe prenotare e non presentarsi alla data stabilita. In questo modo sarebbe possibile da parte del plesso sia bannare quella mail in modo che da li non avvengano più questi disturbi, ed in più dare un feddback negativo all'utente in modo da mettere in guardia eventuali altri plessi di passati non proprio rispettabili.
+2. Implementare sia in fase di registrazione che di prenotazione, una conferma tramite mail, per diminuire i tentativi di disturbo da parte di clienti non interessati.
+3. Aggiungere la funzionalità di pagamento anticipato, che renderebbe il plesso più sicuro dal punto di vista dei “disturbatori” visto che, una volta pagato, il plesso non ha un danno dal non rispetto della prenotazione. Questa caratteristica potrebbe essere anche raccolta nei feed come nota di sicurezza nei confronti di questo cliente.
+4. Ovviamente ci saranno feedback anche per i plessi in modo che descrizioni errate o cattivi comportamenti possano accadere il meno possibile.

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3> Lista prenotazioni </h3>
+	{% for book in booking %}
+		<strong>{{ book.week.period.title }}</strong> <br>
+			Da {{ book.week.get_day_start_display }} a {{ book.week.get_day_end_display }} - Dalle ore {{ book.week.time_start|time:"H:i" }} alle ore {{ book.week.time_end|time:"H:i" }} (Slot: {{ book.week.slot|time:"H:i" }}) 
+		 	
+		 	<br /> <font color='orange'>{{ book.get_day_week_display }} dalle {{ book.hour_start|time:"H:i" }} alle {{ book.hour_end|time:"H:i" }}</font>
+		 - <a href="{% url edit_booking book.id %}">E</a> - <a href="{% url delete_booking book.id %}">X</a> <br />
+		<hr>
+	{% endfor %}
+{% endblock content %}

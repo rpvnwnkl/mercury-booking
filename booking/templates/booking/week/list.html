@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3> Lista periodi</h3>
+	{% for period in periods %}
+		<strong>{{ period.title }}</strong> <br>
+		{% for week in period.week_set.all %}
+			Da {{ week.get_day_start_display }} a {{ week.get_day_end_display }} - Dalle ore {{ week.time_start|time:"H:i" }} alle ore {{ week.time_end|time:"H:i" }} (Slot: {{ week.slot|time:"H:i" }}) 
+			 - <a href="{% url edit_week week.id %}">E</a> - <a href="{% url delete_week week.id %}">X</a> <br />
+		{% endfor %}
+		<hr>
+	{% endfor %}
+{% endblock content %}

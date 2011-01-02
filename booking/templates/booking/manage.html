@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% csrf_token %}
+	<h3 align="center">{{ form_title|default:"Mercury Booking"}}</h3>
+	<form method="post" action="">{% csrf_token %}
+	<table width="550" align="center">
+		{% for field in form %}
+			<tr style="{% if field.errors %}background-color:orange;{% endif %}"><td>{{ field.label }}</td><td>{{ field }}</td>
+			<td style="text-align:center;">{{ field.errors.0 }}</td></tr>
+		{% endfor %}
+		
+			{% for error in form.non_field_errors %}
+				<tr style="{% if form.non_field_errors %}background-color:orange;{% endif %}"><td colspan="2">{{ error }}</td></tr>
+			{% endfor %}
+		<tr><td colspan="2"><input type="submit" value="Save"></td></tr>
+	</table>	
+		
+	</form>	
+{% endblock content %}

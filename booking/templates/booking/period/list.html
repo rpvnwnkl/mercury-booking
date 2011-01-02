@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3> Lista periodi</h3>
+	{% for period in periods %}
+		<a href="{% url edit_period  period.id %}">{{period.title}} ({{ period.date_start }}-{{ period.date_end }})</a> - <a href="{% url delete_period period.id %}">X</a> 
+		<hr>
+	{% endfor %}
+{% endblock content %}
