@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-03 22:31+0100\n"
+"PO-Revision-Date: 2011-01-03 21:16\n"
+"Last-Translator: <admin@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.5.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: models.py:6 models.py:13
+msgid "title"
+msgstr "titolo"
+
+#: models.py:14
+msgid "zoneparameters"
+msgstr ""
+
+#: models.py:21
+msgid "kindzone"
+msgstr ""
+
+#: models.py:22
+msgid "zoneparameter"
+msgstr ""
+
+#: models.py:31
+msgid "name"
+msgstr ""
+
+#: models.py:32
+msgid "description"
+msgstr ""
+
+#: models.py:33
+msgid "city"
+msgstr ""
+
+#: models.py:34
+msgid "province"
+msgstr ""
+
+#: models.py:35
+msgid "cap"
+msgstr ""
+
+#: models.py:36
+msgid "phone"
+msgstr ""
+
+#: models.py:37
+msgid "referent"
+msgstr ""
+
+#: models.py:38
+msgid "referent phone"
+msgstr ""
+
+#: models.py:42
+msgid "kindzones"
+msgstr ""
+
+#: models.py:53
+msgid "Numero"
+msgstr ""
+
+#: models.py:57
+msgid "Limite giocatori"
+msgstr ""
+
+#: models.py:58
+msgid "Costo all'ora"
+msgstr ""
+
+#: models.py:59
+msgid "note"
+msgstr ""

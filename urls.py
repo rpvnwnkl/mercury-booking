@@ -14,7 +14,9 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     (r'^admin/', include(admin.site.urls)),
     url(r'^', include('booking.urls')),
-    
-    (r'^mb_media/(?P<path>.*)$', 'django.views.static.serve',
+
+    url(r'^rosetta/', include('rosetta.urls')),
+
+    (r'^mb_b_media/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': APPLICATION_ROOT + 'mb_media/'}),
 )

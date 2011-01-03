@@ -1,4 +1,10 @@
 # Django settings for mercury_booking project.
+import sys
+from os.path import dirname, join 
+_dir = dirname(__file__)
+from django.utils.translation import ugettext as _
+def _(str):
+    return str
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -27,11 +33,16 @@ DATABASES = {
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'Rome/Europe'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'it-IT'
+
+LANGUAGES = (
+    ('en', _('English')),
+    ('it', _('Italian')),
+)
 
 SITE_ID = 1
 
@@ -75,9 +86,17 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 )
 
 ROOT_URLCONF = 'mercury_booking.urls'
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.core.context_processors.auth",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.request",
+    "django.core.context_processors.media",
+)
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -95,6 +114,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'booking',
     'entity',
+    'rosetta',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
