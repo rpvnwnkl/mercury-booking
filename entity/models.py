@@ -45,9 +45,6 @@ class Entity(models.Model):
        return self.name
     
 class PlayZone(models.Model):
-    
-    
-    
     entity = models.ForeignKey(Entity)
     kindzone = models.ForeignKey(KindZone)
     number = models.IntegerField(_('Numero'), null=True)
@@ -61,6 +58,6 @@ class PlayZone(models.Model):
     #file = models.FileField(upload_to = 'file')
     
     def __unicode__(self):
-        return str(self.plexus) + ': ' + str(self.KIND_CHOICES[self.kind][1])
+        return str(self.entity) + ': ' + self.kindzone.title 
 
     
